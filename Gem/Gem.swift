@@ -1,9 +1,9 @@
 //
-//  SwiftyHttp.swift
-//  SwiftyHttp
+//  Gem.swift
+//  Gem
 //
 //  Created by Albin CR on 4/21/18.
-//  Copyright © 2018 CR-creation.SwiftyHttp. All rights reserved.
+//  Copyright © 2018 CR-creation.Gem. All rights reserved.
 //
 
 
@@ -36,6 +36,7 @@ public func request<T:Codable>(url:String,method:Methods,model:T.Type,Success:@e
                 Error(error, response)
                 return
             }
+            
             if let recivedData = data{
                 parserUserDetails(data: recivedData, model: model, Success: { (modelData) in
                     Success(modelData, response)

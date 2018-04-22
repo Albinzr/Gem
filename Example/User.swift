@@ -1,10 +1,4 @@
-//
-//  User.swift
-//  SwiftyHttp
-//
-//  Created by Albin CR on 4/22/18.
-//  Copyright © 2018 CR-creation.SwiftyHttp. All rights reserved.
-//
+
 
 import Foundation
 

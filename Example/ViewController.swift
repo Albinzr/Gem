@@ -6,28 +6,22 @@
 //  Copyright © 2018 CR-creation.SwiftyHttp. All rights reserved.
 //
 
-
 import UIKit
-import Alamofire
-import SwiftyHttp
-
-
-class Test:Codable{
-    
-    var origin:String?
-    var url:String?
-    
-}
+import Gem
 
 class ViewController: UIViewController {
-
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fetchData()
         
-        SwiftyHttp.request(url: "https://httpbin.org/get", method: Methods.GET, model:Test.self, Success: { (data, response) in
+    }
+    
+    func fetchData(){
+        Gem.request(url: "https://jsonplaceholder.typicode.com/uses", method: Methods.get, model:User.self, Success: { (data, response) in
             
             print(data,response)
             print("success")
@@ -37,6 +31,5 @@ class ViewController: UIViewController {
             print(error,response)
             
         }
-
     }
 }

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Example
 //
-//  Created by Albin CR on 4/21/18.
-//  Copyright © 2018 CR-creation.SwiftyHttp. All rights reserved.
+//  Created by Albin CR on 4/22/18.
+//  Copyright © 2018 CR-creation.Gem. All rights reserved.
 //
 
 import UIKit

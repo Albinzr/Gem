@@ -1,14 +1,14 @@
 //
 //  Jsonparser.swift
-//  SwiftyHttp
+//  Gem
 //
 //  Created by Albin CR on 4/22/18.
-//  Copyright © 2018 CR-creation.SwiftyHttp. All rights reserved.
+//  Copyright © 2018 CR-creation.Gem. All rights reserved.
 //
 
 import Foundation
 
-func parserUserDetails<T:Codable>(data:Data,model:T.Type,Success:@escaping ( _ data:[T])->(),Error:@escaping ( _ error:Error?)->()){
+func parserJsonToModal<T:Codable>(data:Data,model:T.Type,Success:@escaping ( _ data:[T])->(),Error:@escaping ( _ error:Error?)->()){
     
     //1 create decoder
     let decoder = JSONDecoder()
@@ -16,16 +16,17 @@ func parserUserDetails<T:Codable>(data:Data,model:T.Type,Success:@escaping ( _ d
     decoder.keyDecodingStrategy = .convertFromSnakeCase
     
     //2 parse data
-    var model:[T] = []
+//    var model:[T] = []
     
     do {
-        let count = decoder.userInfo.count
-        if count > 1{
-            model = try decoder.decode([T].self, from: data)
-        }else{
-            model = [try decoder.decode(T.self, from: data)]
+
+        if let model:[T] = try? decoder.decode([T].self, from: data){
+            Success(model)
+        } else{
+            let model:[T] = [try decoder.decode(T.self, from: data)]
+            Success(model)
         }
-        Success(model)
+
         return
     }
     catch DecodingError.valueNotFound(let key, let details){
@@ -46,4 +47,22 @@ func parserUserDetails<T:Codable>(data:Data,model:T.Type,Success:@escaping ( _ d
         return
     }
     
+}
+
+func parseJson(data:Data){
+    var dictonary:NSDictionary?
+    
+    if let data = jsonText.dataUsingEncoding(NSUTF8StringEncoding) {
+        
+        do {
+            dictonary =  try NSJSONSerialization.JSONObjectWithData(data, options: []) as? [String:AnyObject]
+            
+            if let myDictionary = dictonary
+            {
+                print(" First name is: \(myDictionary["first_name"]!)")
+            }
+        } catch let error as NSError {
+            print(error)
+        }
+    }
 }

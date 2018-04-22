@@ -1,9 +1,9 @@
 //
 //  NetworkReachablity.swift
-//  SwiftyHttp
+//  Gem
 //
 //  Created by Albin CR on 4/22/18.
-//  Copyright © 2018 CR-creation.SwiftyHttp. All rights reserved.
+//  Copyright © 2018 CR-creation.Gem. All rights reserved.
 //
 // Mostly taken from Alamofire and other libs
 
