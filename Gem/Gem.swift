@@ -38,7 +38,7 @@ public func request<T:Codable>(url:String,method:Methods,model:T.Type,Success:@e
             }
             
             if let recivedData = data{
-                parserUserDetails(data: recivedData, model: model, Success: { (modelData) in
+                parserJsonToModal(data: recivedData, model: model, Success: { (modelData) in
                     Success(modelData, response)
                 }, Error: { (parserError) in
                     Error(parserError,response)

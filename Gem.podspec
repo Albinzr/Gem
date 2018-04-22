@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Gem"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "An extreme light weight system with high performance for managing all api calls in app with closure"
   s.homepage     = "https://github.com/Albinzr/Gem"
   s.license      = 'MIT'

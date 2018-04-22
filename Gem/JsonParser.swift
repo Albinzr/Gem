@@ -48,21 +48,3 @@ func parserJsonToModal<T:Codable>(data:Data,model:T.Type,Success:@escaping ( _ d
     }
     
 }
-
-func parseJson(data:Data){
-    var dictonary:NSDictionary?
-    
-    if let data = jsonText.dataUsingEncoding(NSUTF8StringEncoding) {
-        
-        do {
-            dictonary =  try NSJSONSerialization.JSONObjectWithData(data, options: []) as? [String:AnyObject]
-            
-            if let myDictionary = dictonary
-            {
-                print(" First name is: \(myDictionary["first_name"]!)")
-            }
-        } catch let error as NSError {
-            print(error)
-        }
-    }
-}
