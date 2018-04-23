@@ -53,15 +53,16 @@ github "Albinzr/Gem"
 ### Basics - Get Request
 
 ```swift
-        Gem.request(url: "https://jsonplaceholder.typicode.com/uses", method: Methods.get, model:User.self, Success: { (data, response) in
-            
-            print(data,response)
-            print("success")
-            
+Gem.request(url: "https://jsonplaceholder.typicode.com/uses", method: Methods.get, model:User.self, 
+    Success: { (data, response) in        
+                 // success block
+                print(data,response)
+      
         }) { (error, response) in
-            
-            print(error,response)
+              //error block
+              print(error,response)
             
         }
 
 ```
+response - contain all details related to network call like status code etc..
