@@ -17,6 +17,7 @@
 		2024B78B208D091500DC252F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2024B789208D091500DC252F /* LaunchScreen.storyboard */; };
 		2024B7AE208D093600DC252F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024B7AC208D093600DC252F /* User.swift */; };
 		2024B7AF208D093600DC252F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024B7AD208D093600DC252F /* ViewController.swift */; };
+		208E0314208F05F400654F99 /* ImageUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E0313208F05F400654F99 /* ImageUpload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2024B78C208D091500DC252F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2024B7AC208D093600DC252F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2024B7AD208D093600DC252F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		208E0313208F05F400654F99 /* ImageUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUpload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				2024B787208D091500DC252F /* Assets.xcassets */,
 				2024B789208D091500DC252F /* LaunchScreen.storyboard */,
 				2024B78C208D091500DC252F /* Info.plist */,
+				208E0313208F05F400654F99 /* ImageUpload.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208E0314208F05F400654F99 /* ImageUpload.swift in Sources */,
 				2024B7AF208D093600DC252F /* ViewController.swift in Sources */,
 				2024B7AE208D093600DC252F /* User.swift in Sources */,
 				2024B781208D091500DC252F /* AppDelegate.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import Foundation
 
-func parserJsonToModal<T:Codable>(data:Data,model:T.Type,Success:@escaping ( _ data:[T])->(),Error:@escaping ( _ error:Error?)->()){
+func parserJsonToModel<T:Codable>(data:Data,model:T.Type,Success:@escaping ( _ data:[T])->(),Error:@escaping ( _ error:Error?)->()){
     
     //1 create decoder
     let decoder = JSONDecoder()
@@ -42,9 +42,31 @@ func parserJsonToModal<T:Codable>(data:Data,model:T.Type,Success:@escaping ( _ d
         Error(keyNotFoundError)
         return
     }catch{
-        let jsonConvertError = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey : "unable to convert json to modal"]) as Error
+        let jsonConvertError = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey : "unable to convert json to model"]) as Error
         Error(jsonConvertError)
         return
     }
     
 }
+//func parseStringToJson(data:Any){
+//    let stringData = data as? String{
+//
+//    }
+//}
+
+func isMatching(regex: String,status: String) -> Bool {
+    
+    do {
+        let regex = try NSRegularExpression(pattern: regex)
+        let results = regex.matches(in: status,range: NSRange(status.startIndex..., in: status))
+        if results.count > 0{
+            return true
+        }else{
+            return false
+        }
+    } catch let error {
+        print("invalid regex: \(error.localizedDescription)")
+        return false
+    }
+}
+
