@@ -184,4 +184,4 @@ let image:UIImage = UIImage(named: "scan") // or image url
         }
 
 ```
-#### PR are are always welcomed
+#### PR/request/suggestions are always welcomed
