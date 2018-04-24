@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     
     func uploadImage(){
         
-        let image:UIImage = UIImage(named: "scan") // or image url 
+        let image:UIImage = UIImage(named: "scan")! // or image url 
         let imageData:Data = UIImagePNGRepresentation(image)!
         let base64Data =  imageData.base64EncodedString()
         
