@@ -35,7 +35,7 @@ or
 ```ruby
 use_frameworks!
 
-pod 'Gem', git: 'https://github.com/Albinzr/Gem', :tag => '1.0.2'
+pod 'Gem', git: 'https://github.com/Albinzr/Gem', :tag => '1.0.3'
 
 ```
 
