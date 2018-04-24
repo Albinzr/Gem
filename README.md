@@ -62,7 +62,7 @@ github "Albinzr/Gem"
             // model class
             class Details:Codable{
                 var name:String? // same variable as in json
-                var publishedOn:ing? // incase of snake casing use camel casing of the same name
+                var publishedOn:Int? // incase of snake casing use camel casing of the same name
                 var Time:String // same variable as in json
             }
  ```
