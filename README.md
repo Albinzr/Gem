@@ -1,5 +1,5 @@
 # Gem
-An extreme light weight system with high performance for managing all http request with automated parser with modal.
+A light weight network library with automated model parser for rapped development.
 
 [![Swift 4.1](https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](https://developer.apple.com/swift/)
