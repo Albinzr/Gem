@@ -65,6 +65,7 @@ github "Albinzr/Gem"
                 var publishedOn:ing? // incase of snake casing use camel casing of the same name
                 var Time:String // same variable as in json
             }
+ ```
 
 ## Example
 
