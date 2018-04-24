@@ -51,6 +51,7 @@ github "Albinzr/Gem"
    1. All model class should have Codable protocol
    2. Naming for variable should be as follow
             ```swift
+            
             //json
             {
                 name:"Albin CR",
