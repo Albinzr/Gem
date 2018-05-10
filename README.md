@@ -9,7 +9,7 @@ A light weight network library with automated model parser for rapid development
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 
-Managing all http request with automated modal parser calls in app with closure
+Managing all http request with automated model parser calls in app with closure
 
 ## Requirements
 
