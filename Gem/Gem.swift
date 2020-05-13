@@ -107,7 +107,7 @@ fileprivate func setParameter(request:inout URLRequest,parameter:[String:Any]?) 
 fileprivate func setHeader( request:inout URLRequest,header:[String:String]?){
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
     header?.forEach { (headerDetail) in
-        request.addValue(headerDetail.key, forHTTPHeaderField: headerDetail.value)
+        request.addValue(headerDetail.value, forHTTPHeaderField: headerDetail.key)
     }
 }
 
